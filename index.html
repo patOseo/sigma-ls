@@ -107,14 +107,12 @@ a{color:inherit}
 .navlinks button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:4px 0}
 .navlinks button:hover{color:var(--ink)}
 .navlinks button[aria-current="true"]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent-line)}
-/* Phones: smaller logo, tighter nav; the header grows if the nav needs a second line */
+/* Phones: smaller logo and a shorter bar */
 @media(max-width:600px){
   .topbar{padding:6px 0}
-  .topbar .wrap{gap:14px;height:auto;min-height:56px}
+  .topbar .wrap{gap:14px;height:56px}
   .topbar .wrap>a{flex:0 0 auto}
-  .main-logo{display:block;width:120px;max-width:100%;height:auto;margin-bottom:0}
-  .navlinks{flex-wrap:wrap;justify-content:flex-end;gap:4px 14px;font-size:13.5px;text-align:right}
-  .navlinks button{line-height:1.3}
+  .main-logo{display:block;width:140px;max-width:100%;height:auto;margin-bottom:0}
 }
 
 /* ---------- type ---------- */
@@ -504,7 +502,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 .p-yes{background:var(--sh4);color:#fff}
 .p-dev{background:var(--sh2);color:var(--ink)}
 .p-no{background:var(--surface);color:var(--faint)}
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout{background:var(--surface);padding-bottom:0}
 #view-readout .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -532,7 +530,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout body{background:#fff}.navlinks,#view-readout .banner{display:none}#view-readout .doc{max-width:none;margin:0;box-shadow:none}#view-readout .draftmark{position:fixed;top:8mm;right:8mm}#view-readout .draftfoot{page-break-inside:avoid}#view-readout .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout .pg:last-child{page-break-after:auto}#view-readout .cand, #view-readout .callout, #view-readout table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout2{background:var(--surface);padding-bottom:0}
 #view-readout2 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -551,7 +549,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout2 body{background:#fff}.navlinks,#view-readout2 .banner{display:none}#view-readout2 .doc{max-width:none;margin:0;box-shadow:none}#view-readout2 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout2 .draftfoot{page-break-inside:avoid}#view-readout2 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout2 .pg:last-child{page-break-after:auto}#view-readout2 .find, #view-readout2 .callout, #view-readout2 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view (readout3) ================= */
+/* ================= sample talent insight report, scoped to its own view (readout3) ================= */
 #view-readout3{background:var(--surface);padding-bottom:0}
 #view-readout3 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -570,7 +568,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout3 body{background:#fff}.navlinks,#view-readout3 .banner{display:none}#view-readout3 .doc{max-width:none;margin:0;box-shadow:none}#view-readout3 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout3 .draftfoot{page-break-inside:avoid}#view-readout3 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout3 .pg:last-child{page-break-after:auto}#view-readout3 .find, #view-readout3 .callout, #view-readout3 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view (readout4) ================= */
+/* ================= sample talent insight report, scoped to its own view (readout4) ================= */
 #view-readout4{background:var(--surface);padding-bottom:0}
 #view-readout4 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -589,7 +587,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout4 body{background:#fff}.navlinks,#view-readout4 .banner{display:none}#view-readout4 .doc{max-width:none;margin:0;box-shadow:none}#view-readout4 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout4 .draftfoot{page-break-inside:avoid}#view-readout4 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout4 .pg:last-child{page-break-after:auto}#view-readout4 .find, #view-readout4 .callout, #view-readout4 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout5{background:var(--surface);padding-bottom:0}
 #view-readout5 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -608,7 +606,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout5 body{background:#fff}#view-readout5 .banner{display:none}#view-readout5 .doc{max-width:none;margin:0;box-shadow:none}#view-readout5 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout5 .draftfoot{page-break-inside:avoid}#view-readout5 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout5 .pg:last-child{page-break-after:auto}#view-readout5 .find, #view-readout5 .callout, #view-readout5 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout6{background:var(--surface);padding-bottom:0}
 #view-readout6 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -627,7 +625,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout6 body{background:#fff}#view-readout6 .banner{display:none}#view-readout6 .doc{max-width:none;margin:0;box-shadow:none}#view-readout6 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout6 .draftfoot{page-break-inside:avoid}#view-readout6 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout6 .pg:last-child{page-break-after:auto}#view-readout6 .find, #view-readout6 .callout, #view-readout6 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout7{background:var(--surface);padding-bottom:0}
 #view-readout7 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -646,7 +644,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout7 body{background:#fff}#view-readout7 .banner{display:none}#view-readout7 .doc{max-width:none;margin:0;box-shadow:none}#view-readout7 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout7 .draftfoot{page-break-inside:avoid}#view-readout7 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout7 .pg:last-child{page-break-after:auto}#view-readout7 .find, #view-readout7 .callout, #view-readout7 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout8{background:var(--surface);padding-bottom:0}
 #view-readout8 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -665,7 +663,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 }
 @media print{#view-readout8 body{background:#fff}#view-readout8 .banner{display:none}#view-readout8 .doc{max-width:none;margin:0;box-shadow:none}#view-readout8 .draftmark{position:fixed;top:8mm;right:8mm}#view-readout8 .draftfoot{page-break-inside:avoid}#view-readout8 .pg{padding:0 0 26px;border-bottom:0;page-break-after:always}#view-readout8 .pg:last-child{page-break-after:auto}#view-readout8 .find, #view-readout8 .callout, #view-readout8 table{page-break-inside:avoid}
 }
-/* ================= sample executive read-out, scoped to its own view ================= */
+/* ================= sample talent insight report, scoped to its own view ================= */
 #view-readout9{background:var(--surface);padding-bottom:0}
 #view-readout9 .doc{max-width:820px;margin:26px auto 60px;background:var(--paper);
   box-shadow:0 1px 3px rgba(0,0,0,.06)}
@@ -706,9 +704,7 @@ footer{padding:44px 0;font-size:13.5px;color:var(--faint)}
 
 
 /* ==========================================================================
-   Match the main SIGMA site (sigmaassessmentsystems.com, e.g.
-   /leadership-development-solutions/measuring-development-roi/).
-   Overrides only: delete this block to return to the previous look.
+   Overrides only
    ========================================================================== */
 body{font-weight:350;font-size:16px;line-height:1.7}
 strong,b{font-weight:700}
@@ -804,6 +800,89 @@ footer{background:var(--surface);color:var(--muted)}
 .faq-a p.tiny{font-size:13px;color:var(--muted)}
 @media(max-width:600px){.faq-q{font-size:17px;padding:14px 16px}.faq-a:not([hidden]){padding:14px 16px}}
 @media print{.faq-a[hidden]{display:block!important}}
+
+/* Contact page */
+/* Form card spans the container; "Not sure where to start?" sits beneath it */
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+.contact-aside{max-width:74ch}
+.contact-form{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:32px;min-height:200px}
+.contact-form a{color:var(--accent)}
+.contact-aside{border-left:4px solid var(--accent-line);padding:4px 0 4px 24px}
+.contact-aside h2{font-size:clamp(21px,2.1vw,25px);line-height:1.2;margin-bottom:12px}
+.contact-aside p{font-size:16px;color:var(--muted)}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:28px}.contact-form{padding:22px}}
+/* Contact in the top menu: a SIGMA Blue pill, as on the main site */
+.navlinks button.nav-contact{background:var(--accent);color:#fff;border-radius:32px;padding:4px 16px;
+  transition:background-color .3s}
+.navlinks button.nav-contact:hover,.navlinks button.nav-contact[aria-current="true"]{background:#a7ac0e;color:#fff;box-shadow:none}
+
+/* Why SIGMA page */
+.em-green{font-style:italic;color:var(--sigma-dark-green)}
+a.inline{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+a.inline:hover{color:var(--sigma-dark-green)}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.person{background:var(--paper);border:1px solid var(--rule);border-radius:8px;overflow:hidden;
+  display:flex;flex-direction:column}
+/* portraits are circular cut-outs with a SIGMA badge, so show them whole */
+.person img{display:block;width:auto;max-width:calc(100% - 32px);height:auto;max-height:180px;
+  aspect-ratio:1;object-fit:contain;margin:18px auto 0}
+.person-body{padding:18px 18px 20px}
+.person h3{font-family:var(--heading);font-size:17px;font-weight:600;line-height:1.3;margin-bottom:6px}
+.person h3 em{font-style:italic;font-weight:500}
+.person-role{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--sigma-green-text);line-height:1.5;margin-bottom:10px}
+.person p:not(.person-role){font-size:14px;line-height:1.65;color:var(--muted)}
+section.dark .privacy-link{color:var(--sigma-lightgrey);text-decoration:underline;text-underline-offset:2px}
+section.dark .privacy-link:hover{color:var(--sigma-light-green)}
+.h1-wide{max-width:none;text-wrap:balance}
+/* consultant row breaks out of the 1080px column to ~1440px on wide screens */
+@media(min-width:1100px){
+  .people{width:min(1440px,calc(100vw - 64px));position:relative;left:50%;transform:translateX(-50%);gap:20px}
+}
+/* client logos */
+.logos{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:8px}
+.logos li{flex:0 0 calc((100% - 5*14px)/6);display:flex;align-items:center;justify-content:center;
+  height:96px;padding:16px 20px;background:#fff;border:1px solid var(--rule);border-radius:8px}
+.logos img{max-width:100%;max-height:56px;width:auto;height:auto;object-fit:contain}
+@media(max-width:900px){.logos li{flex-basis:calc((100% - 2*14px)/3)}}
+@media(max-width:520px){.logos li{flex-basis:calc((100% - 14px)/2);height:84px}}
+/* testimonial */
+.testimonial{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px;align-items:center;margin-top:56px}
+.testimonial>img{width:200px;height:200px;border-radius:50%;object-fit:cover}
+.testimonial-body{background:var(--surface);border-radius:16px;padding:36px 40px}
+.testimonial blockquote{font-size:19px;line-height:1.6;color:var(--ink)}
+.testimonial figcaption{margin-top:20px;font-size:15px;line-height:1.5;color:var(--muted)}
+.testimonial figcaption strong{display:block;color:var(--accent);font-size:16px;font-weight:700}
+@media(max-width:820px){.testimonial{grid-template-columns:1fr;gap:20px;justify-items:start}
+  .testimonial>img{width:120px;height:120px}.testimonial-body{padding:24px}}
+
+/* Mobile menu: at 900px and below the nav collapses behind a hamburger and opens as a panel
+   under the top bar */
+.menu-toggle{display:none}
+@media(max-width:900px){
+  .menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;margin-left:auto;
+    width:44px;height:44px;padding:0 10px;background:none;border:0;cursor:pointer;border-radius:6px}
+  .menu-toggle span{display:block;height:2px;width:100%;background:var(--accent);border-radius:2px;
+    transition:transform .2s,opacity .2s}
+  .topbar.menu-open .menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .topbar.menu-open .menu-toggle span:nth-child(2){opacity:0}
+  .topbar.menu-open .menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .navlinks{display:none;position:absolute;top:100%;left:0;right:0;margin:0;flex-direction:column;
+    gap:0;padding:8px 22px 20px;background:#fff;border-bottom:1px solid var(--rule);
+    box-shadow:0 10px 24px rgba(13,27,42,.12);font-size:17px;color:#353535}
+  .topbar.menu-open .navlinks{display:flex}
+  .navlinks button{text-align:left;padding:14px 0;border-bottom:1px solid var(--rule)}
+  .navlinks button[aria-current="true"]{box-shadow:inset 3px 0 0 var(--accent-line);padding-left:14px;
+    color:var(--accent);font-weight:600}
+  .navlinks button.nav-contact{margin-top:16px;padding:12px 16px;text-align:center;border-bottom:0;border-radius:32px}
+}
+
+/* numbered references under an FAQ list */
+.references{max-width:820px;margin-top:40px;padding-top:20px;border-top:1px solid var(--rule)}
+.references h3{font-size:15px;font-weight:700;margin-bottom:10px}
+.references ol{padding-left:1.4em;font-size:13px;line-height:1.6;color:var(--muted)}
+.references li{padding-left:4px}
+.references li+li{margin-top:8px}
 </style>
 <!-- Schema: site-wide -->
 <script type="application/ld+json">
@@ -968,10 +1047,14 @@ footer{background:var(--surface);color:var(--muted)}
     <a href="/leadership-solutions/" onclick="go('index');return false" aria-label="Leadership solutions home">
       <img class="main-logo" src="https://www.sigmaassessmentsystems.com/wp-content/themes/sigma/images/sigma-logo.png" alt="SIGMA Assessment Systems Logo" width="200" height="41">
     </a>
-    <nav class="navlinks">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+      aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="site-nav" aria-label="Main">
       <button onclick="go('index')" id="nav-index">Leadership challenges</button>
       <button onclick="go('lsp')" id="nav-lsp">Measure</button>
       <button onclick="go('clarience')" id="nav-clarience">Develop</button>
+      <button onclick="go('why')" id="nav-why">Why SIGMA</button>
+      <button onclick="go('contact')" id="nav-contact" class="nav-contact">Contact Us</button>
     </nav>
   </div>
 </header>
@@ -1046,14 +1129,12 @@ footer{background:var(--surface);color:var(--muted)}
         <div class="card filled">
           <div class="kicker">What we suggest instead</div>
           <h3>Measure a group, then decide</h3>
-          <p>Start with the leadership group you want to understand better. About four weeks later
-            you have the group results and an hour with us on what they show. Every participant keeps
-            their own results and 12 months of Clarience either way.</p>
+          <p>Start with the leadership group you want to understand better. In approximately four weeks, you'll receive the group results and have an opportunity to review the findings with a SIGMA consultant. Each participant also receives their individual results and 12 months of access to Clarience.</p>
         </div>
       </div>
       <a class="altdoor" href="#start" onclick="go('start');return false">
         <span class="altdoor-k">Where to begin</span>
-        <h3>Not sure which of the three you are in, or whether you are in any of them</h3>
+        <h3>Not sure which of these challenges best describes your situation, or whether any of them apply?</h3>
         <p>Measure a group and see what the results show. About four weeks, $142 per participant,
           and no need to decide in advance which competencies need development.</p>
         <span class="altdoor-go">Start by measuring a group</span>
@@ -1087,6 +1168,227 @@ footer{background:var(--surface);color:var(--muted)}
   </section>
 </div>
 
+<div class="view" id="view-why">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Why SIGMA</span>
+      <h1 class="h1-wide">Leadership decisions deserve more than guesswork.</h1>
+      <p class="lede" style="margin-top:18px;max-width:62ch">Decisions about who to develop, promote,
+        or prepare for future leadership roles can have lasting consequences. Yet organizations
+        don't always have the information they need to make those decisions with confidence.</p>
+      <p class="small" style="margin-top:16px;max-width:68ch">Since 1967, SIGMA Assessment Systems
+        has helped organizations better understand their people through scientifically validated
+        assessments and expert guidance. Today, we combine that foundation in psychological
+        measurement with practical succession planning, leadership development, and personalized
+        coaching.</p>
+      <p class="small" style="margin-top:12px;max-width:68ch">Our goal is straightforward: to help
+        organizations make better-informed decisions about their leaders and what comes next.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Experience you can measure</h2>
+        <p class="lede" style="margin-top:14px">SIGMA's experience extends across industries,
+          organizational sizes, and sectors. Our assessments and consulting services have supported
+          thousands of organizations, from growing businesses to large public institutions.</p>
+      </div>
+      <div class="proofstrip">
+        <div><div class="pv">Founded in 1967</div><div class="pl">A legacy of psychological
+          assessment and research.</div></div>
+        <div><div class="pv">4 million+</div><div class="pl">Assessments conducted.</div></div>
+        <div><div class="pv">8,500+</div><div class="pl">Organizations served.</div></div>
+        <div><div class="pv">400+</div><div class="pl">Clients who have worked with SIGMA for more
+          than 10 years.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap">
+      <div class="sec-head" style="max-width:72ch">
+        <h2>Built on a foundation of research</h2>
+        <p style="margin-top:14px">SIGMA was founded by Dr. Douglas N. Jackson, a psychologist whose
+          contributions to personality assessment helped establish our scientific foundation.
+          Research and psychometric rigour remain central to our approach.</p>
+        <p style="margin-top:12px">Our assessments are developed and evaluated using established
+          psychometric principles, with research examining their reliability and validity. This
+          helps organizations make decisions using evidence rather than relying exclusively on
+          subjective impressions.</p>
+        <p style="margin-top:12px">For leadership assessment, SIGMA's
+          <a class="inline" href="https://www.sigmaassessmentsystems.com/assessments/leadership-skills-profile-revised-focus/succession-planning-leadership/">Leadership Skills Profile – Revised® (LSP-R®)</a> measures
+          tendencies across 50 leadership competencies, providing a structured picture of individual
+          strengths and development priorities.</p>
+        <p style="margin-top:12px">The results can also inform broader organizational questions:
+          Where are leadership gaps emerging? Which employees may benefit from targeted development?
+          How well do current leaders align with the requirements of future roles?</p>
+        <div class="ctarow">
+          <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://www.sigmaassessmentsystems.com/assessments/leadership-skills-profile-revised-focus/succession-planning-leadership/">Explore the LSP-R</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="max-width:72ch;margin-bottom:0">
+        <h2>Experienced people behind the assessments</h2>
+        <p style="margin-top:14px">SIGMA's consultants bring together expertise in
+          industrial-organizational psychology, psychometrics, succession planning, leadership
+          development, and executive coaching.</p>
+        <p style="margin-top:12px">Our team combines scientific expertise with practical experience
+          helping organizations assess their leaders, identify development priorities, and plan for
+          the future. When you work with SIGMA, you have access to experienced professionals who
+          understand both the science of assessment and the challenges of putting those insights
+          into practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap">
+      <div class="sec-head" style="max-width:72ch">
+        <span class="eyebrow">Who you'll work with</span>
+        <h2>Meet the consultants behind <em class="em-green">the assessment.</em></h2>
+        <p class="lede" style="margin-top:14px">When you work with SIGMA, you're not handed to a
+          call centre. The same senior consultants who wrote the succession planning guides and
+          built the LSP-R methodology are the ones you'll speak with. Over 4 million assessments
+          conducted. Close to 4,500 academic citations.</p>
+      </div>
+      <div class="people">
+        <div class="person">
+          <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2018/08/Julie_Photo2-300x295-1.jpg" alt="Julie Carswell" loading="lazy">
+          <div class="person-body">
+            <h3>Julie Carswell, <em>Ph.D.</em></h3>
+            <p class="person-role">Vice President · R&amp;D, Coaching &amp; Consulting</p>
+            <p>Certified executive coach and I-O psychologist with decades of R&amp;D experience. Named a 2019 Women Worth Watching®. Leads SIGMA&rsquo;s assessment development and large-scale coaching initiatives.</p>
+          </div>
+        </div>
+        <div class="person">
+          <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2018/08/glenPhoto-1.jpg" alt="Glen Harrison" loading="lazy">
+          <div class="person-body">
+            <h3>Glen Harrison</h3>
+            <p class="person-role">Vice President · Succession &amp; Talent Strategy</p>
+            <p>Organizational transformation consultant who has worked with ⅓ of the Fortune 500 and every level of government in Canada and the US. Expert in building succession systems from the ground up.</p>
+          </div>
+        </div>
+        <div class="person">
+          <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2018/08/Erica_Photo-300x290-1.jpg" alt="Erica Sutherland" loading="lazy">
+          <div class="person-body">
+            <h3>Erica Sutherland, <em>Ph.D.</em></h3>
+            <p class="person-role">Senior Consultant &amp; Executive Coach</p>
+            <p>Ph.D. in I-O Psychology (Western University). Delivers succession planning consulting and executive coaching, with deep expertise in psychometrics and assessment validation.</p>
+          </div>
+        </div>
+        <div class="person">
+          <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2018/08/Brittney_Edit2-300x300-1.jpg" alt="Brittney Anderson" loading="lazy">
+          <div class="person-body">
+            <h3>Brittney Anderson, <em>Ph.D.</em></h3>
+            <p class="person-role">Senior Consultant &amp; Executive Coach</p>
+            <p>Evidence-based practice specialist in succession planning and leadership development programs. Helps organizations prepare for their future through structured, process-driven coaching.</p>
+          </div>
+        </div>
+        <div class="person">
+          <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2016/05/Ruby-Photo-280x300.jpg" alt="Ruby Nadler" loading="lazy">
+          <div class="person-body">
+            <h3>Ruby Nadler, <em>Ph.D.</em></h3>
+            <p class="person-role">Leadership Consultant &amp; Coach</p>
+            <p>Ph.D. in Cognition and Perception (Western University). Leverages psychology and mindfulness to coach leaders across private and public sectors using competency-based and 360-degree assessment tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="max-width:72ch">
+        <h2>Trusted by organizations across sectors</h2>
+        <p style="margin-top:14px">From growing businesses to major corporations and public
+          institutions, organizations have turned to SIGMA for scientifically sound assessments and
+          practical talent management support.</p>
+        <p style="margin-top:12px">More than 400 clients have maintained relationships with SIGMA
+          for over a decade — a reflection of the long-term partnerships we've built with the
+          organizations we serve.</p>
+      </div>
+      <ul class="logos" aria-label="Selected SIGMA clients">
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/SARA-1.png" alt="SARA" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Primoris-1.jpg" alt="PSC Primoris" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/ndtc-logo-3-1.png" alt="NDTC" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/ontellus-1.webp" alt="Ontellus" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Homewood-Health-logo-1.jpg" alt="Homewood Health" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Intercounty-Electric-1.jpeg" alt="Intercounty Electric" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Harry-Reid-1.png" alt="Harry Reid International Airport" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Chandler-AZ-1.webp" alt="City of Chandler, Arizona" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/ASU-logo-1.webp" alt="ASU Inc." loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/CenCal-Health-1.png" alt="CenCal Health" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/Bob-Barker-Logo-1.jpg" alt="Bob Barker" loading="lazy"></li>
+        <li><img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2022/10/AlphaLogo2-1.png" alt="alphabroder" loading="lazy"></li>
+      </ul>
+      <figure class="testimonial">
+        <img src="https://sigmaassess.b-cdn.net/wp-content/uploads/2025/04/Jen-Kilman-300x300.jpg" alt="Jen Kilman" loading="lazy">
+        <div class="testimonial-body">
+          <blockquote>&ldquo;This was phenomenal. I am in the process of standardizing our
+            succession processes across our Americas region and this is exactly what I wanted.
+            SIGMA gave me the resources I needed to help my team be able to easily understand how to
+            identify critical roles easier and then begin to build out each of their benches in a
+            methodical way. I can’t wait to start using all the tools! This went above my
+            expectations. I am already working on how to implement my succession plan.&rdquo;</blockquote>
+          <figcaption><strong>Jen Kilman</strong>Senior Director, Talent Development<br>
+            <em>Omron Management Centre of America</em></figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <h2>Let's talk about your leadership challenges.</h2>
+      <p class="lede" style="margin-top:14px;max-width:56ch">Have a question about leadership
+        assessment, succession planning, or development? Our consultants can help you explore your
+        options and determine the next steps for your organization.</p>
+      <div class="ctarow">
+        <a class="btn btn-primary" href="#contact" onclick="go('contact');return false">Contact SIGMA</a>
+      </div>
+      <p class="tiny" style="margin-top:22px"><a class="privacy-link" target="_blank" rel="noopener noreferrer" href="https://www.sigmaassessmentsystems.com/privacy-policy/">SIGMA's privacy policy</a></p>
+    </div>
+  </section>
+</div>
+
+<div class="view" id="view-contact">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Contact us</span>
+      <div style="max-width:50ch">
+        <h1>Let's talk about your leadership needs.</h1>
+      </div>
+      <p class="lede" style="margin-top:18px;max-width:62ch">Whether you're planning for future
+        leadership requirements, addressing gaps in your leadership pipeline, or exploring how
+        assessment can support better talent decisions, we'd be happy to hear from you.</p>
+      <p class="small" style="margin-top:16px;max-width:68ch">Tell us a little about your
+        organization and what you're working on. A member of our team will follow up to discuss
+        how we can help.</p>
+    </div>
+  </section>
+  <section class="tint">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-form" id="contact-form">
+          <p class="small">Loading the contact form&hellip; If it doesn't appear, email
+            <a href="mailto:sigma@sigmaassessmentsystems.com">sigma@sigmaassessmentsystems.com</a>.</p>
+        </div>
+        <aside class="contact-aside">
+          <h2>Not sure where to start?</h2>
+          <p>You don't need to have a fully defined project or know which assessment or service is
+            right for your organization. Our team can help you explore your options and determine
+            whether SIGMA's approach is a good fit.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</div>
+
 <div id="pagehost"></div>
 
 <div class="view" id="view-lsp">
@@ -1100,12 +1402,10 @@ footer{background:var(--surface);color:var(--muted)}
           <p class="h1sub">Measure leadership tendencies across 50 competencies, then turn the
             results into development.</p>
           <p class="lede" style="margin-top:20px">The Leadership Skills Profile – Revised®
-            (LSP-R®) is SIGMA's flagship leadership assessment. This comprehensive
+            (LSP-R®) is SIGMA's personality-based leadership assessment. This comprehensive
             personality-based assessment measures leadership tendencies across 50 competency
             areas, helping leaders understand their strengths and development priorities.</p>
-          <p class="small" style="margin-top:16px;max-width:60ch">The self-rated LSP-R is
-            completed online and takes 25 minutes. Groups are usually given a two-week window so it
-            fits around people's calendars, and most participants finish within a few days. Each
+          <p class="small" style="margin-top:16px;max-width:60ch">The LSP-R is a self-report assessment completed online in approximately 25 minutes. Each
             participant receives a personalized Focus Report with their results and 12 months of
             access to Clarience, SIGMA's AI-enabled coaching platform. Development can begin as soon
             as the assessment is complete.</p>
@@ -1223,11 +1523,11 @@ footer{background:var(--surface);color:var(--muted)}
             of the general public.</p>
         </div>
         <div class="card">
-          <div class="kicker">Why it is a high bar</div>
-          <h3>Scoring 40th is not failing</h3>
-          <p>It means below the midpoint of an already selective group. This is why a result is a
-            statistical statement rather than an impression, and why it holds up when somebody asks
-            how you arrived at it.</p>
+          <div class="kicker"></div>
+          <h3>Why it is a high bar</h3>
+          <p>A score at the 40th percentile means an individual scored higher than approximately 40% 
+            of the senior managers and executives in the reference group. This provides context for 
+            interpreting results and identifying relative strengths and development opportunities.</p>
         </div>
       </div>
       <p class="small" style="margin-top:24px;max-width:70ch">The comparison group is deliberately senior.
@@ -1387,7 +1687,7 @@ footer{background:var(--surface);color:var(--muted)}
           <p>The LSP-R is a personality-based leadership assessment. Rather than reporting only broad personality traits or assigning someone a type, it measures tendencies across 50 specific leadership competencies.</p>
           <p style="margin-top:12px">That makes the results more directly useful for development. Leaders can see their strengths and development priorities at the competency level and use the same competency framework to guide development and measure progress over time.</p></div>
         <div class="faq-item"><h3>How long does the LSP-R take?</h3>
-          <p>The LSP-R takes about 25 minutes and is completed online, with no proctor or scheduling required. Groups are usually given a two-week window so it fits around people's calendars, and most participants finish within a few days.</p>
+          <p>The LSP-R takes approximately 25 minutes and is completed online, with no proctor or scheduling required. Each participant takes the assessment once. Their results can then be used for development and compared with different competency benchmarks without requiring them to take the assessment again.</p>
           <p style="margin-top:12px">Each participant takes the assessment once. Their results can then be used for development and compared with different competency benchmarks without requiring them to take the assessment again.</p></div>
         <div class="faq-item"><h3>What is a norm group and why does it matter in leadership assessment?</h3>
           <p>A norm group is the population an assessment score is compared with. It provides context for understanding what a score means relative to other people in that group.</p>
@@ -1465,8 +1765,8 @@ footer{background:var(--surface);color:var(--muted)}
       <div class="proofstrip">
         <div><div class="pv">50 competencies</div><div class="pl">LSP-R results provide the
           foundation for development.</div></div>
-        <div><div class="pv">12 months</div><div class="pl">Clarience included with every leader
-          assessed.</div></div>
+        <div><div class="pv">12 months</div><div class="pl">Clarience included with every completed 
+          LSP-R assessment.</div></div>
         <div><div class="pv">Same day</div><div class="pl">Development can begin as soon as the
           assessment is complete.</div></div>
         <div><div class="pv">Personalized</div><div class="pl">Coaching based on each leader's
@@ -1652,21 +1952,13 @@ footer{background:var(--surface);color:var(--muted)}
             evidence rather than relying only on information the leader provides in the
             conversation.</p></div>
         <div class="faq-item"><h3>Does AI coaching work?</h3>
-          <p>Research on AI coaching is still developing, but early findings are promising. One
-            randomized controlled study found that AI coaching significantly improved goal attainment
-            compared with a control group. A second study found that both human coaching and AI
-            coaching produced significantly greater goal attainment than their respective control
-            groups, with no significant difference in goal attainment between the two coaching
-            groups.</p>
-          <p style="margin-top:12px">Clarience builds on this emerging evidence by grounding coaching
-            in each leader's LSP-R results and development priorities, giving the coaching a measured
-            starting point and a consistent framework for development.</p>
-          <p class="tiny" style="margin-top:12px">Terblanche, N. H. D., Molyn, J., de Haan, E., &amp;
-            Nilsson, V. O. (2022). Coaching at scale: Investigating the efficacy of artificial
-            intelligence coaching. <em>International Journal of Evidence Based Coaching and
-            Mentoring, 20</em>(2). Terblanche, N. H. D., Molyn, J., de Haan, E., &amp; Nilsson, V. O.
-            (2022). Comparing artificial intelligence and human coaching goal attainment efficacy.
-            <em>PLOS ONE, 17</em>(6), e0270255.</p></div>
+          <p>Research on AI coaching is still developing, but early findings are promising. One randomized 
+            controlled study found that AI coaching significantly improved goal attainment compared with a 
+            control group.¹ A second study found that both human coaching and AI coaching produced significantly 
+            greater goal attainment than their respective control groups, with no significant difference in 
+            goal attainment between the two coaching groups.² Clarience builds on this emerging evidence by 
+            grounding coaching in each leader's LSP-R results and development priorities, giving the coaching 
+            a measured starting point and a consistent framework for development.</p></div>
         <div class="faq-item"><h3>How is AI coaching different from executive coaching?</h3>
           <p>Executive coaching provides a one-to-one relationship with a human coach who brings
             judgment, experience, challenge, and ongoing dialogue to a leader's development. AI
@@ -1737,15 +2029,24 @@ footer{background:var(--surface);color:var(--muted)}
             development support when it is relevant rather than waiting for a scheduled
             session.</p></div>
       </div>
+      <div class="references">
+        <h3>References</h3>
+        <ol>
+          <li>Terblanche, N. H. D., Molyn, J., de Haan, E., &amp; Nilsson, V. O. (2022). Coaching at
+            scale: Investigating the efficacy of artificial intelligence coaching. <em>International
+            Journal of Evidence Based Coaching and Mentoring, 20</em>(2).</li>
+          <li>Terblanche, N. H. D., Molyn, J., de Haan, E., &amp; Nilsson, V. O. (2022). Comparing
+            artificial intelligence and human coaching goal attainment efficacy. <em>PLOS ONE,
+            17</em>(6), e0270255.</li>
+        </ol>
+      </div>
     </div>
   </section>
 
   <section class="dark">
     <div class="wrap">
       <h2>Measurement is the starting point. Development is what comes next.</h2>
-      <p class="lede" style="margin-top:14px;max-width:56ch">Clarience is included with every leader
-        assessed so development can begin as soon as the LSP-R is complete and continue over the next
-        12 months.</p>
+      <p class="lede" style="margin-top:14px;max-width:56ch">Every leader who completes the LSP-R receives 12 months of access to Clarience, with personalized coaching informed by their assessment results and development priorities.</p>
       <div class="ctarow">
         <a class="btn btn-primary" href="https://meetings.hubspot.com/glen-harrison/sigma?uuid=a69f2b9d-662d-4f39-8f58-ead7715d3a8f" target="_blank" rel="noopener" data-booking>Book a call with Glen</a>
         <a class="btn btn-ghost" href="#lsp" onclick="go('lsp');return false">See the leadership assessment</a>
@@ -2057,7 +2358,7 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
@@ -2066,7 +2367,7 @@ footer{background:var(--surface);color:var(--muted)}
 
 <!-- ============ COVER ============ -->
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;·&nbsp; Executive Read-Out &nbsp;·&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;·&nbsp; Talent Insight Report &nbsp;·&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Chief Operating Officer<br>appointment</h1>
   <p class="lede" style="margin-top:22px">Three internal candidates, measured against what the seat
     now requires.</p>
@@ -2341,8 +2642,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;·&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -2366,7 +2667,7 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
@@ -2375,7 +2676,7 @@ footer{background:var(--surface);color:var(--muted)}
 
 <!-- COVER -->
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;·&nbsp; Executive Read-Out &nbsp;·&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;·&nbsp; Talent Insight Report &nbsp;·&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Leadership<br>bench review</h1>
   <p class="lede" style="margin-top:22px">Forty-eight leaders measured against what their roles
     require, read at group level.</p>
@@ -2587,8 +2888,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;·&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -2611,14 +2912,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Successor<br>readiness review</h1>
   <p class="lede" style="margin-top:22px">One named successor, measured against the seat, so that
     not ready becomes a short list of gaps with a date attached.</p>
@@ -2808,8 +3109,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -2829,14 +3130,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Senior succession<br>coverage</h1>
   <p class="lede" style="margin-top:22px">Two questions, two plans. Emergency cover, and readiness
     over three years.</p>
@@ -3003,8 +3304,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -3024,14 +3325,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">New manager<br>fit review</h1>
   <p class="lede" style="margin-top:22px">One manager, measured against what the role requires, to
     separate a gap development can close from a fit that it cannot.</p>
@@ -3212,8 +3513,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -3233,14 +3534,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">High potential<br>list review</h1>
   <p class="lede" style="margin-top:22px">The nominated list, and the population it was drawn from,
     measured against the same standard.</p>
@@ -3418,8 +3719,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -3439,14 +3740,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Succession plan<br>review</h1>
   <p class="lede" style="margin-top:22px">The plan you already have, with measured evidence
     underneath each name and the people it never considered.</p>
@@ -3619,8 +3920,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -3640,14 +3941,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Forward requirements<br>review</h1>
   <p class="lede" style="margin-top:22px">What leadership roles will require in three years, and how
     the current group measures against that rather than against today.</p>
@@ -3815,8 +4116,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -3836,14 +4137,14 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
 <div class="banner">
   <b>DRAFT · FOR INSPIRATION ONLY.</b> This is a concept piece showing the intended shape of a
-  SIGMA executive read-out. It is not the finished deliverable. All data, names and organizational
+  SIGMA talent insight report. It is not the finished deliverable. All data, names and organizational
   details are invented.
 </div>
 
 <div class="doc">
 <div class="draftmark">DRAFT</div>
 <section class="pg">
-  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Executive Read-Out &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
+  <div class="mono">SIGMA Assessment Systems &nbsp;&middot;&nbsp; Talent Insight Report &nbsp;&middot;&nbsp; <span style="color:var(--accent)">Draft concept</span></div>
   <h1 style="margin-top:20px">Combined leadership<br>team review</h1>
   <p class="lede" style="margin-top:22px">Two leadership populations, measured against one written
     standard for the combined organization.</p>
@@ -4014,8 +4315,8 @@ footer{background:var(--surface);color:var(--muted)}
   </div>
       <div class="draftfoot">
         <p><b>DRAFT &nbsp;&middot;&nbsp; NOT THE FINISHED DELIVERABLE</b>
-          This document exists to show the intended structure, depth and tone of a SIGMA executive
-          read-out. It is a working draft used to gather reactions, and the final deliverable will
+          This document exists to show the intended structure, depth and tone of a SIGMA talent
+          insight report. It is a working draft used to gather reactions, and the final deliverable will
           differ in content and may differ in format. Every figure, name and organizational detail
           here is invented, and the analysis is illustrative rather than drawn from a real
           engagement. Nothing in it should be quoted, circulated as a SIGMA finding, or relied on as
@@ -4118,7 +4419,7 @@ const PAGES={
    {q:'How long does it take to build a defensible succession plan?',
     a:'The LSP-R takes about 25 minutes per person. The full succession planning process typically takes about eight weeks, including time to complete the assessments, interpret the results, and turn the findings into a plan.'},
    {q:'How many successors should you name per role?',
-    a:'Two is the conventional answer, but the number matters less than whether the second name is genuinely different from the first. A second successor with the same background, the same path up and the same strengths is one successor recorded twice, and the seat is one deep rather than two.'},
+    a:'The number matters less than the strength of the coverage behind it. Naming two successors does not necessarily give you meaningful depth if both have similar backgrounds, experience, and development needs. The important question is whether you have credible options for the role and evidence to support them.'},
    {q:'Should the board meet potential successors?',
     a:'Exposure is generally considered good governance, since a board asked to approve a successor it has never observed is being asked to take management on trust. The practical caution is sequencing: exposure without a stated readiness view invites the board to form its own impressions in place of evidence.'},
    {q:'What is the difference between a succession plan and a replacement plan?',
@@ -4158,7 +4459,7 @@ const PAGES={
   optRec:'B',
   ctaHead:'Build a succession plan you can stand behind.',
   ctaBody:'In 20 minutes, we\u2019ll talk through the roles you need to plan for, where you are today, and whether this approach fits your timeline. No preparation needed.',
-  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a full executive read-out'},
+  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a sample Talent Insight Report'},
 
  ld2:{code:'LD-2',eyebrow:'Leadership development',
   orgHead:'A clear picture of your leadership bench, not just a collection of individual results.',
@@ -4259,7 +4560,7 @@ const PAGES={
    {n:'02',h:'The bench depends on a small pool of candidates',
     p:'The capability exists, but it\u2019s concentrated in a small number of leaders. If one or two people leave, the risk becomes obvious.'},
    {n:'03',h:'The bench is incomplete',
-    p:'The bench looks shallow because it is missing people, not because the capability is missing. More people have leadership potential than the organization has identified, so strong candidates are being overlooked.'}],
+    p:'The bench may look shallow because some capable employees have not been identified as potential future leaders. Assessing a broader group can help reveal candidates who might otherwise be overlooked.'}],
   wideHead:'The risk may be below the roles you\u2019re watching most closely.',
   wideBody:'Most organizations describe the problem the same way: we don\u2019t have enough people ready. These three situations can sound identical until you measure them, but they lead to very different decisions.',
   measure:'Every participant is measured across the same 50 leadership competencies. Individual results show where each person is strong and where they need development, while the combined results show patterns across your leadership group.',
@@ -4269,7 +4570,7 @@ const PAGES={
   optRec:null,
   ctaHead:'Find out where your leadership bench is strong, where it\u2019s shallow, and what to do next.',
   ctaBody:'In 20 minutes, we\u2019ll talk through the leadership roles you\u2019re concerned about, who you may want to include, and whether this approach fits what you\u2019re trying to understand. No preparation needed.',
-  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a full executive read-out'},
+  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a sample Talent Insight Report'},
 
  ld3:{code:'LD-3',eyebrow:'Leadership development',  ctaSecondaryV:'readout8',
   riskHead:'Job descriptions do not always keep pace with the role.',
@@ -4309,7 +4610,7 @@ const PAGES={
      li:['We work with you to determine which gaps can be addressed through development and where hiring, role redesign, or another response may be needed.',
          'We establish priorities so you can act first on what matters most rather than simply what is easiest to address.',
          'Updated role requirements give you a clear standard for future selection, promotion, and development decisions.']}],
-   parallel:'Everyone assessed begins 12 months of personalized development with Clarience, focused on the gaps identified by their LSP-R results. Instead of putting everyone through the same leadership program, each participant focuses on the competencies that matter most for their own development.',
+   parallel:'Everyone who completes the LSP-R receives 12 months of access to Clarience, with personalized coaching informed by their assessment results and development priorities.',
    ledger:[{w:'Define current and future role requirements',a:'about one hour'},
            {w:'Assessment and initial coaching, inside a two-week window',a:'25 minutes, or 45 with coaching'},
            {w:'Executive working session and results review',a:'about half a day'}],
@@ -4378,7 +4679,7 @@ const PAGES={
     a:'Sometimes. A leader who moves into a larger or different role may need to strengthen competencies that mattered less in their previous role. But sometimes the person has not changed roles at all. The organization has changed around them, and what their existing role requires has changed with it. The important question is not whether what got someone here will get them there. It is what the role will require next and how well the person matches those requirements.'}],
   ctaHead:'Start with the requirement, not the trend.',
   ctaBody:'In 20 minutes, we can talk through how your leadership roles are changing, what they\u2019ll require next, and what it would take to measure your current leaders against those requirements.',
-  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a full executive read-out',
+  ctaPrimary:'Book a call with Glen',ctaSecondary:'See a sample Talent Insight Report',
   softAsset:null /* TODO-CLIENT #8: 'Get the guide: specifying what a role will require' needs a URL */}
 };
 
@@ -4547,6 +4848,32 @@ function renderPage(key){
 
 document.getElementById('pagehost').innerHTML=Object.keys(PAGES).map(renderPage).join('');
 
+/* Mobile menu toggle */
+(function(){
+  const bar=document.querySelector('.topbar'), btn=bar.querySelector('.menu-toggle'),
+        nav=document.getElementById('site-nav');
+  const set=(open)=>{bar.classList.toggle('menu-open',open);btn.setAttribute('aria-expanded',open);
+    btn.setAttribute('aria-label',open?'Close menu':'Menu');};
+  btn.addEventListener('click',()=>set(!bar.classList.contains('menu-open')));
+  nav.addEventListener('click',e=>{if(e.target.closest('button')) set(false);});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&bar.classList.contains('menu-open')){set(false);btn.focus();}});
+  document.addEventListener('click',e=>{if(!bar.contains(e.target)) set(false);});
+  window.matchMedia('(min-width:901px)').addEventListener('change',e=>{if(e.matches) set(false);});
+})();
+
+/* Contact form: the HubSpot form used on the main site's Contact Us page. */
+(function(){
+  const s=document.createElement('script');
+  s.src='https://js.hsforms.net/forms/embed/v2.js'; s.async=true;
+  s.onload=function(){
+    if(!window.hbspt) return;
+    document.getElementById('contact-form').innerHTML='';
+    hbspt.forms.create({region:'na1',portalId:'23966676',
+      formId:'c87b722b-ec4e-4019-8e75-7e3461dac200',target:'#contact-form'});
+  };
+  document.head.appendChild(s);
+})();
+
 /* FAQ accordions, styled after the main site's accordion block. Each question becomes a
    button inside its h3, and the answer collapses beneath it. The answers stay in the HTML
    (hidden="until-found"), so search engines and find-in-page still reach them. Opening
@@ -4577,11 +4904,19 @@ document.querySelectorAll('.faq').forEach((list,li)=>{
 });
 
 
-const VIEWS=['index','start','lsp','clarience','readout','readout2','readout3','readout4','readout5','readout6','readout7','readout8','readout9'].concat(Object.keys(PAGES));
+const VIEWS=['index','start','lsp','clarience','why','contact','readout','readout2','readout3','readout4','readout5','readout6','readout7','readout8','readout9'].concat(Object.keys(PAGES));
 
 /* Per-view titles and descriptions, swapped client-side for the browser tab and shares.
    The canonical stays fixed on this page's URL. Slugs are the planned phase 2 URLs. */
 const META={
+  why:{
+    slug:'why-sigma',
+    title:'Why SIGMA | Validated Leadership Assessment Since 1967 | SIGMA',
+    desc:'Since 1967, SIGMA has helped organizations make better-informed leadership decisions with scientifically validated assessments, succession planning, leadership development and coaching.'},
+  contact:{
+    slug:'contact',
+    title:'Contact Us | Leadership Solutions | SIGMA',
+    desc:'Talk with SIGMA about your leadership needs: succession planning, gaps in your leadership pipeline, or using assessment to support better talent decisions.'},
   index:{
     slug:'solutions',
     title:'Leadership Solutions | Succession Planning and Leadership Development | SIGMA',
@@ -4603,41 +4938,41 @@ const META={
     title:'How to Start a Leadership Development Program | SIGMA',
     desc:'You do not have to know what the problem is before you measure. Assess a group of leaders across 50 competencies, and the results tell you where to invest. About four weeks, $142 per participant.'},
   readout:{
-    slug:'leadership-assessment-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Filling a Senior Vacancy | SIGMA',
-    desc:'A sample SIGMA executive read-out for a senior appointment decision. Three internal candidates measured against what the seat requires, with what the evidence supports and what it cannot see.'},
+    slug:'leadership-assessment-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Filling a Senior Vacancy | SIGMA',
+    desc:'A sample SIGMA talent insight report for a senior appointment decision. Three internal candidates measured against what the seat requires, with what the evidence supports and what it cannot see.'},
   readout2:{
-    slug:'leadership-bench-strength-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Leadership Bench Review | SIGMA',
-    desc:'A sample SIGMA executive read-out for a leadership bench review. Forty-eight leaders measured against role requirements, read at group level, separating a systemic gap from a concentration risk.'},
+    slug:'leadership-bench-strength-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Leadership Bench Review | SIGMA',
+    desc:'A sample SIGMA talent insight report for a leadership bench review. Forty-eight leaders measured against role requirements, read at group level, separating a systemic gap from a concentration risk.'},
   readout3:{
-    slug:'successor-readiness-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Successor Readiness | SIGMA',
-    desc:'A sample SIGMA executive read-out for a successor readiness review. One named successor measured against the seat, with gaps sorted by whether development is likely to close them.'},
+    slug:'successor-readiness-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Successor Readiness | SIGMA',
+    desc:'A sample SIGMA talent insight report for a successor readiness review. One named successor measured against the seat, with gaps sorted by whether development is likely to close them.'},
   readout4:{
-    slug:'board-succession-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Board Succession Coverage | SIGMA',
-    desc:'A sample SIGMA executive read-out for a board succession review. Five senior seats reported against two questions: emergency cover and three-year readiness.'},
+    slug:'board-succession-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Board Succession Coverage | SIGMA',
+    desc:'A sample SIGMA talent insight report for a board succession review. Five senior seats reported against two questions: emergency cover and three-year readiness.'},
   readout5:{
-    slug:'new-manager-fit-sample-executive-read-out',
-    title:'Sample Executive Read-Out: New Manager Fit Review | SIGMA',
-    desc:'A sample SIGMA executive read-out for a struggling new manager. One manager measured against the role, separating a gap development can close from a fit that it cannot.'},
+    slug:'new-manager-fit-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: New Manager Fit Review | SIGMA',
+    desc:'A sample SIGMA talent insight report for a struggling new manager. One manager measured against the role, separating a gap development can close from a fit that it cannot.'},
   readout6:{
-    slug:'high-potential-sample-executive-read-out',
-    title:'Sample Executive Read-Out: High Potential List Review | SIGMA',
-    desc:'A sample SIGMA executive read-out validating a high potential list. Fifty-two people measured against one standard, including the wider population the list was drawn from.'},
+    slug:'high-potential-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: High Potential List Review | SIGMA',
+    desc:'A sample SIGMA talent insight report validating a high potential list. Fifty-two people measured against one standard, including the wider population the list was drawn from.'},
   readout7:{
-    slug:'succession-plan-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Succession Plan Review | SIGMA',
-    desc:'A sample SIGMA executive read-out checking a succession plan. Eighteen named successors measured against the seats they are named for, plus the people the plan never considered.'},
+    slug:'succession-plan-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Succession Plan Review | SIGMA',
+    desc:'A sample SIGMA talent insight report checking a succession plan. Eighteen named successors measured against the seats they are named for, plus the people the plan never considered.'},
   readout8:{
-    slug:'changing-requirements-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Forward Requirements Review | SIGMA',
-    desc:'A sample SIGMA executive read-out on changing role requirements. What leadership roles will demand in three years, and where the current group is short against that standard.'},
+    slug:'changing-requirements-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Forward Requirements Review | SIGMA',
+    desc:'A sample SIGMA talent insight report on changing role requirements. What leadership roles will demand in three years, and where the current group is short against that standard.'},
   readout9:{
-    slug:'post-acquisition-sample-executive-read-out',
-    title:'Sample Executive Read-Out: Combined Leadership Team | SIGMA',
-    desc:'A sample SIGMA executive read-out for a post-acquisition leadership decision. Two populations measured against one written standard for the combined organization.'},
+    slug:'post-acquisition-sample-talent-insight-report',
+    title:'Sample Talent Insight Report: Combined Leadership Team | SIGMA',
+    desc:'A sample SIGMA talent insight report for a post-acquisition leadership decision. Two populations measured against one written standard for the combined organization.'},
   lsp:{
     slug:'leadership-skills-profile',
     title:'Leadership Assessment | Leadership Skills Profile-Revised (LSP-R) | SIGMA',
@@ -4661,7 +4996,7 @@ function go(v,push){
   document.querySelectorAll('.view').forEach(el=>el.classList.remove('active'));
   const el=document.getElementById('view-'+v);
   if(el) el.classList.add('active');
-  ['index','lsp','clarience'].forEach(k=>{
+  ['index','lsp','clarience','why','contact'].forEach(k=>{
     const b=document.getElementById('nav-'+k);
     if(b) b.setAttribute('aria-current', k===v ? 'true':'false');
   });
