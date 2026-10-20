@@ -434,6 +434,12 @@ footer{padding:44px 0;font-size:14.5px;color:var(--faint)}
 .tile-go{display:block;margin-top:14px;padding-top:12px;border-top:1px dotted var(--rule);font-size:15px;font-weight:600;color:var(--accent)}
 .tile-go span{display:inline-block;transition:transform .15s}
 .tile:hover .tile-go span{transform:translateX(4px)}
+/* a whole .card that acts as a link, with the same arrow footer as the tiles */
+.cardlink{display:flex;flex-direction:column;text-decoration:none;color:inherit;cursor:pointer;transition:border-color .15s}
+.cardlink:hover{border-color:var(--sigma-dark-green)}
+.cardlink p{margin-bottom:14px}
+.cardlink .tile-go{margin-top:auto}
+.cardlink:hover .tile-go span{transform:translateX(4px)}
 .tile .tilebar.dev ~ .tile-out{color:var(--steel)}
 /* the alternative entrance beneath the three doors */
 .altdoor{display:block;margin-top:34px;border:1px solid var(--rule);border-top:3px solid var(--steel);
@@ -988,22 +994,20 @@ section.dark .privacy-link:hover{color:var(--sigma-light-green)}
       <div class="sec-head"><span class="eyebrow">What sits behind all of it</span>
         <h2>One assessment, and a year of coaching that starts the same day.</h2></div>
       <div class="split">
-        <div class="card">
+        <a class="card cardlink" href="#lsp" onclick="go('lsp');return false">
           <div class="kicker">Measure</div>
           <h3>Leadership Skills Profile-Revised</h3>
           <p>Fifty leadership competencies, scored against a norm base of senior managers and
             executives. Twenty-five minutes, online, taken once.</p>
-          <p class="small" style="margin-top:12px"><a href="#lsp" onclick="go('lsp');return false"
-            style="border-bottom:1px solid var(--rule)">More on the assessment</a></p>
-        </div>
-        <div class="card">
+          <span class="tile-go">More on the assessment <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="card cardlink" href="#clarience" onclick="go('clarience');return false">
           <div class="kicker">Develop</div>
           <h3>Clarience</h3>
           <p>AI coaching that starts with the leader's assessment results and development
             priorities. Twelve months, included with every participant.</p>
-          <p class="small" style="margin-top:12px"><a href="#clarience" onclick="go('clarience');return false"
-            style="border-bottom:1px solid var(--rule)">More on the coaching</a></p>
-        </div>
+          <span class="tile-go">More on the coaching <span aria-hidden="true">&rarr;</span></span>
+        </a>
       </div>
     </div>
   </section>
