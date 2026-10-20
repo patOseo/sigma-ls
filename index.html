@@ -411,7 +411,7 @@ footer{padding:44px 0;font-size:14.5px;color:var(--faint)}
   letter-spacing:-.012em;line-height:1.15;margin-bottom:6px}
 .tgroup-head p{font-size:14.5px;color:var(--muted)}
 .tile-out{display:block;margin-top:14px;padding-top:12px;border-top:1px dotted var(--rule);
-  font-family:var(--mono);font-size:13px;letter-spacing:.05em;color:var(--accent);line-height:1.5}
+  font-family:var(--mono);font-size:14px;font-style:italic;color:var(--accent);line-height:1.5}
 .tile .code.dev ~ .tile-out{color:var(--steel)}
 /* the organization-side deliverable, sitting under the two individual cards */
 .orgcard{margin-top:20px;border:1px solid var(--rule);border-left:3px solid var(--accent-line);
@@ -445,8 +445,9 @@ footer{padding:44px 0;font-size:14.5px;color:var(--faint)}
 .altdoor h3{font-family:var(--heading);font-weight:var(--heading-weight);font-size:clamp(20px,2.1vw,24px);
   letter-spacing:-.012em;line-height:1.2;margin-bottom:10px}
 .altdoor p{font-size:15px;color:var(--muted)}
-.altdoor-go{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--accent);
-  display:inline-block;margin-top:16px;border-bottom:1px solid var(--rule)}
+.altdoor-go{display:block;margin-top:14px;padding-top:12px;border-top:1px dotted var(--rule);font-size:15px;font-weight:600;color:var(--accent)}
+.altdoor-go span{display:inline-block;transition:transform .15s}
+.altdoor:hover .altdoor-go span{transform:translateX(4px)}
 /* the exit at the foot of a page, for anyone who landed on the wrong one */
 .offramp{margin-top:34px;padding-top:22px;border-top:1px solid var(--rule)}
 .offramp p{font-size:15px;color:var(--muted);line-height:1.6}
@@ -977,7 +978,7 @@ section.dark .privacy-link:hover{color:var(--sigma-light-green)}
         <h3>Not sure which of these challenges best describes your situation, or whether any of them apply?</h3>
         <p>Measure a group and see what the results show. About four weeks, $142 per participant,
           and no need to decide in advance which competencies need development.</p>
-        <span class="altdoor-go">Start by measuring a group</span>
+        <span class="altdoor-go">Start by measuring a group <span aria-hidden="true">&rarr;</span></span>
       </a>
     </div>
   </section>
