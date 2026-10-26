@@ -515,6 +515,28 @@ footer{padding:44px 0;font-size:14.5px;color:var(--faint)}
 .p-yes{background:var(--sh4);color:#fff}
 .p-dev{background:var(--sh2);color:var(--ink)}
 .p-no{background:var(--surface);color:var(--faint)}
+
+/* benchmark heat table (succession hero): navy header, green bands by share meeting the benchmark */
+.bm-h{font-family:var(--heading);font-weight:var(--heading-weight);font-size:clamp(20px,2vw,24px);
+  line-height:1.2;color:var(--sigma-blue)}
+.bm-sub{font-size:14.5px;line-height:1.45;color:var(--muted);margin:10px 0 18px}
+.bm{width:100%;border-collapse:collapse;font-size:14px}
+.bm th{background:var(--sigma-blue);color:#fff;font-weight:600;padding:12px 12px;line-height:1.3}
+.bm th:first-child{text-align:left;border-top-left-radius:6px}
+.bm th:last-child{border-top-right-radius:6px}
+.bm th+th{border-left:1px solid rgba(255,255,255,.25);text-align:center;width:28%}
+.bm td{padding:14px 12px;border-bottom:1px solid var(--rule);color:var(--sigma-blue)}
+.bm td.v{text-align:center;font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.bm .b1{background:#E4F0EA}.bm .b2{background:#C5E5D8}.bm .b3{background:#93D0B8}
+.bm .b4{background:#57B39A;color:#fff}.bm .b5{background:#087A5E;color:#fff}
+.bm-key{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:18px;
+  font-size:12.5px;line-height:1.35;color:var(--muted)}
+.bm-key i{display:block;width:26px;height:26px;border-radius:3px;margin-bottom:8px}
+#view-succ3 .hero>.wrap,#view-ld2 .hero>.wrap,#view-ld3 .hero>.wrap{max-width:1280px}
+#view-succ3 .hero-grid,#view-ld2 .hero-grid,#view-ld3 .hero-grid{grid-template-columns:1fr 1fr}
+@media(max-width:820px){#view-succ3 .hero-grid,#view-ld2 .hero-grid,#view-ld3 .hero-grid{grid-template-columns:1fr}}
+.bm-foot{font-size:12px;line-height:1.5;color:var(--muted);padding-top:12px;margin-top:18px;
+  border-top:1px solid var(--rule)}
 .sith{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--faint);margin:18px 0 9px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
 .sitlist{list-style:none;font-size:14.5px;columns:2;column-gap:34px}
@@ -1291,7 +1313,7 @@ section.dark .privacy-link:hover{color:var(--sigma-light-green)}
 <div id="pagehost"></div>
 
 <!-- Sample report request: the HubSpot form for the current page is placed in here when opened -->
-<dialog class="report-dialog" id="report-dialog" aria-label="Download a sample Talent Insight Report">
+<dialog class="report-dialog" id="report-dialog" aria-label="Download a sample Executive Readout">
   <button type="button" class="report-close" aria-label="Close">&times;</button>
   <div class="report-form" id="report-form"></div>
 </dialog>
@@ -2381,18 +2403,26 @@ const PAGES={
   ],
   quote:'You\u2019ve been asked for a succession plan. What they\u2019re really asking is whether the names in it can be defended.',
   answer:'You may already have people in mind. The harder questions are whether they could step in today, whether they\u2019ll be ready in a few years, and what evidence supports those decisions. We measure your potential successors against what each role actually requires, so you can show who\u2019s ready, who needs development, and where you may need another option.',
-  vizTitle:'Coverage, seat by seat',
-  viz:`<div class="cov">
-     <div class="cov-r"><span></span><span class="cov-h">Cover now</span><span class="cov-h">3 years</span></div>
-     <div class="cov-r"><span>Chief Executive</span>
-       <span class="pill p-yes">yes</span><span class="pill p-yes">yes</span></div>
-     <div class="cov-r"><span>Chief Financial Officer</span>
-       <span class="pill p-yes">yes</span><span class="pill p-dev">with dev</span></div>
-     <div class="cov-r"><span>Chief Operating Officer</span>
-       <span class="pill p-dev">with dev</span><span class="pill p-yes">yes</span></div>
-     <div class="cov-r"><span>Chief People Officer</span>
-       <span class="pill p-no">no</span><span class="pill p-dev">with dev</span></div>
-   </div><div class="scale-foot"><span>illustrative</span><span>emergency cover and readiness</span></div><p class="tiny" style="margin-top:12px">Two answers per seat, because a board is asking two questions.</p>`,
+  vizTitle:'<span style="color:var(--sigma-green-text);font-weight:700">Cedar Vale Industries · Succession planning</span>',
+  viz:`<div class="bm-h">Percentage of leaders meeting the benchmark</div>
+   <p class="bm-sub">Percentage at or above the 60th percentile, for selected benchmark competencies.</p>
+   <table class="bm">
+     <thead><tr><th scope="col">Competency</th><th scope="col">Directors<br>(17)</th><th scope="col">Executives<br>(8)</th></tr></thead>
+     <tbody>
+       <tr><td>Strategic Planning</td><td class="v b1">18%</td><td class="v b4">63%</td></tr>
+       <tr><td>Delegation</td><td class="v b1">12%</td><td class="v b2">38%</td></tr>
+       <tr><td>Business Acumen</td><td class="v b2">35%</td><td class="v b5">75%</td></tr>
+     </tbody>
+   </table>
+   <div class="bm-key" aria-label="Color key">
+     <span><i style="background:#E4F0EA"></i>under 25%</span>
+     <span><i style="background:#C5E5D8"></i>25 to 39%</span>
+     <span><i style="background:#93D0B8"></i>40 to 59%</span>
+     <span><i style="background:#57B39A"></i>60 to 74%</span>
+     <span><i style="background:#087A5E"></i>75% and above</span>
+   </div>
+   <div class="bm-foot">SIGMA Assessment Systems  ·  Executive Readout  ·  Illustrative sample.<br>
+     The organization is fictional and all data is simulated.</div>`,
   reEyebrow:'How the conversation actually goes',
   reHead:'Three questions. Most succession plans are built to answer only the first.',
   cols:[
@@ -2411,7 +2441,7 @@ const PAGES={
   optRec:'B',
   ctaHead:'Build a succession plan you can stand behind.',
   ctaBody:'In 20 minutes, we\u2019ll talk through the roles you need to plan for, where you are today, and whether this approach fits your timeline. No preparation needed.',
-  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Talent Insight Report'},
+  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Executive Readout'},
 
  ld2:{code:'LD-2',eyebrow:'Leadership development',
   orgHead:'A clear picture of your leadership bench, not just a collection of individual results.',
@@ -2487,23 +2517,26 @@ const PAGES={
   ],
   quote:'I\u2019m not confident we have enough people ready for the leadership roles we\u2019ll need to fill.',
   answer:'You may be right. But believing your bench is shallow and knowing where it\u2019s shallow are two different things. The second one tells you what to do next.',
-  vizTitle:'Coverage matrix',
-  viz:`<div class="mx-h" style="grid-template-columns:104px repeat(3,1fr)"><span></span>
-     <span>Mgr</span><span>Dir</span><span>VP</span></div>
-   <div class="mx">
-     <div class="mx-r" style="grid-template-columns:104px repeat(3,1fr)">
-       <span class="mx-n">Developing / Coaching Others</span>
-       <span class="mx-c s1">19%</span><span class="mx-c s1">26%</span><span class="mx-c s2">25%</span></div>
-     <div class="mx-r" style="grid-template-columns:104px repeat(3,1fr)">
-       <span class="mx-n">Delegation</span>
-       <span class="mx-c s2">31%</span><span class="mx-c s1">22%</span><span class="mx-c s2">33%</span></div>
-     <div class="mx-r" style="grid-template-columns:104px repeat(3,1fr)">
-       <span class="mx-n">Strategic Planning</span>
-       <span class="mx-c s2">35%</span><span class="mx-c s4">62%</span><span class="mx-c s5">80%</span></div>
-     <div class="mx-r" style="grid-template-columns:104px repeat(3,1fr)">
-       <span class="mx-n">Analytical Orientation</span>
-       <span class="mx-c s4">64%</span><span class="mx-c s4">68%</span><span class="mx-c s5">75%</span></div>
-   </div><div class="ex-key"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i><i class="s5"></i>&nbsp;LOW TO HIGH COVERAGE</div><div class="scale-foot"><span>illustrative</span><span>proportion meeting requirement</span></div><p class="tiny" style="margin-top:12px">A pale row is a selection problem. A graded row is a concentration risk.</p>`,
+  vizTitle:'<span style="color:var(--sigma-green-text);font-weight:700">Brightwater Foods · Leadership development</span>',
+  viz:`<div class="bm-h">Percentage of leaders meeting the benchmark</div>
+   <p class="bm-sub">Percentage at or above the 60th percentile, for selected benchmark competencies.</p>
+   <table class="bm">
+     <thead><tr><th scope="col">Competency</th><th scope="col">Directors<br>(17)</th><th scope="col">Executives<br>(8)</th></tr></thead>
+     <tbody>
+       <tr><td>Developing/Coaching Others</td><td class="v b1">6%</td><td class="v b1">13%</td></tr>
+       <tr><td>Delegation</td><td class="v b1">12%</td><td class="v b2">38%</td></tr>
+       <tr><td>Strategic Planning</td><td class="v b1">18%</td><td class="v b4">63%</td></tr>
+     </tbody>
+   </table>
+   <div class="bm-key" aria-label="Color key">
+     <span><i style="background:#E4F0EA"></i>under 25%</span>
+     <span><i style="background:#C5E5D8"></i>25 to 39%</span>
+     <span><i style="background:#93D0B8"></i>40 to 59%</span>
+     <span><i style="background:#57B39A"></i>60 to 74%</span>
+     <span><i style="background:#087A5E"></i>75% and above</span>
+   </div>
+   <div class="bm-foot">SIGMA Assessment Systems  ·  Executive Readout  ·  Illustrative sample.<br>
+     The organization is fictional and all data is simulated.</div>`,
   reEyebrow:'What you do not know yet',
   reHead:'A shallow bench is really a signal for one of three problems.',
   cols:[
@@ -2522,7 +2555,7 @@ const PAGES={
   optRec:null,
   ctaHead:'Find out where your leadership bench is strong, where it\u2019s shallow, and what to do next.',
   ctaBody:'In 20 minutes, we\u2019ll talk through the leadership roles you\u2019re concerned about, who you may want to include, and whether this approach fits what you\u2019re trying to understand. No preparation needed.',
-  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Talent Insight Report'},
+  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Executive Readout'},
 
  ld3:{code:'LD-3',eyebrow:'Leadership development',  reportFormId:'4318482b-6815-4a10-8cc4-15d477a08b9a',
   riskHead:'Job descriptions do not always keep pace with the role.',
@@ -2587,23 +2620,26 @@ const PAGES={
   wideHead:'Job descriptions do not always keep pace with the role.',
   wideBody:'Most organizations describe this the same way: the company has changed, and the roles have changed with it. What is missing is a written standard for what those roles will require next.',
   wideLink:{t:'What if the roles are clear, but you don\u2019t have enough people ready? If you already know what your leadership roles require but aren\u2019t confident you have enough people who can step into them, the bigger question may be the strength of your leadership bench. Explore this problem \u2192',v:'ld2'},
-  vizTitle:'What the role will require',
-  viz:`<div class="mx-h" style="grid-template-columns:112px 1fr 1fr"><span></span>
-     <span>Today</span><span>Future requirement</span></div>
-   <div class="mx">
-     <div class="mx-r" style="grid-template-columns:112px 1fr 1fr">
-       <span class="mx-n">Vision</span>
-       <span class="mx-c s2">moderate</span><span class="mx-c s5">high</span></div>
-     <div class="mx-r" style="grid-template-columns:112px 1fr 1fr">
-       <span class="mx-n">Analytical Orientation</span>
-       <span class="mx-c s3">high</span><span class="mx-c s5">high</span></div>
-     <div class="mx-r" style="grid-template-columns:112px 1fr 1fr">
-       <span class="mx-n">Technical Orientation</span>
-       <span class="mx-c s4">high</span><span class="mx-c s2">moderate</span></div>
-     <div class="mx-r" style="grid-template-columns:112px 1fr 1fr">
-       <span class="mx-n">Social Astuteness</span>
-       <span class="mx-c s1">low</span><span class="mx-c s4">high</span></div>
-   </div><div class="scale-foot"><span>illustrative</span><span>illustrative example</span></div><p class="tiny" style="margin-top:12px">Some requirements become more important, some stay the same, and others become less important. Defining those changes gives you a standard you can measure your leaders against.</p>`,
+  vizTitle:'<span style="color:var(--sigma-green-text);font-weight:700">Ardent Systems · Future leadership</span>',
+  viz:`<div class="bm-h">Future leadership competency gaps</div>
+   <p class="bm-sub">Percentage meeting the future benchmark on competencies added to leadership requirements.</p>
+   <table class="bm">
+     <thead><tr><th scope="col">Competency</th><th scope="col">Directors<br>(17)</th><th scope="col">Executives<br>(8)</th></tr></thead>
+     <tbody>
+       <tr><td>Vision</td><td class="v b1">12%</td><td class="v b2">38%</td></tr>
+       <tr><td>Flexibility</td><td class="v b1">0%</td><td class="v b2">25%</td></tr>
+       <tr><td>Operating Upwards</td><td class="v b1">0%</td><td class="v b2">38%</td></tr>
+     </tbody>
+   </table>
+   <div class="bm-key" aria-label="Color key">
+     <span><i style="background:#E4F0EA"></i>under 25%</span>
+     <span><i style="background:#C5E5D8"></i>25 to 39%</span>
+     <span><i style="background:#93D0B8"></i>40 to 59%</span>
+     <span><i style="background:#57B39A"></i>60 to 74%</span>
+     <span><i style="background:#087A5E"></i>75% and above</span>
+   </div>
+   <div class="bm-foot">SIGMA Assessment Systems  ·  Executive Readout  ·  Illustrative sample.<br>
+     The organization is fictional and all data is simulated.</div>`,
   concept:{name:'Future-skills lists',
    body:'They can be useful starting points. Skills such as adaptability, judgment, curiosity, and comfort with ambiguity may become increasingly important as organizations change. But a general list cannot tell you what a particular leadership role in your organization will require. That depends on your strategy, operating environment, and what the person in that role will actually need to deliver.',
    counter:'You cannot measure a person against a trend. To assess readiness, you need to define what the role will require and measure the person against that standard.'},
@@ -2631,7 +2667,7 @@ const PAGES={
     a:'Sometimes. A leader who moves into a larger or different role may need to strengthen competencies that mattered less in their previous role. But sometimes the person has not changed roles at all. The organization has changed around them, and what their existing role requires has changed with it. The important question is not whether what got someone here will get them there. It is what the role will require next and how well the person matches those requirements.'}],
   ctaHead:'Start with the requirement, not the trend.',
   ctaBody:'In 20 minutes, we can talk through how your leadership roles are changing, what they\u2019ll require next, and what it would take to measure your current leaders against those requirements.',
-  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Talent Insight Report',
+  ctaPrimary:'Schedule a call',ctaSecondary:'Download a sample Executive Readout',
   softAsset:null /* TODO-CLIENT #8: 'Get the guide: specifying what a role will require' needs a URL */}
 };
 
