@@ -3000,6 +3000,15 @@ document.querySelectorAll('[data-booking]').forEach(a=>{a.href=BOOKING_URL;a.tar
     if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) dlg.close();
   });
   dlg.addEventListener('close',()=>{host.innerHTML=''; if(opener) opener.focus();});
+  window.addEventListener('hs-form-event:on-submission:success',e=>{
+    const formId=(e.detail&&e.detail.formId)||(opener&&opener.dataset.reportForm)||'';
+    (window.dataLayer=window.dataLayer||[]).push({
+      event:'hubspot-form-success',
+      'hs-form-guid':formId,
+      formType:'sample-report',
+      pageView:(location.hash||'#index').slice(1)
+    });
+  });
 })();
 </script>
 </body>
